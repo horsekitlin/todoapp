@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "204185665080",
+    "project_id": "deep-ground-539",
+    "storage_bucket": "deep-ground-539.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204185665080:android:067d0d7508d649d8c7b0cd",
+        "android_client_info": {
+          "package_name": "com.todoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204185665080-5voi5oatpuapp7kgmicdsfrs9u1ottf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5H1IPelNlq-TWsQ8TniW0HQJWJXgDlY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204185665080-5voi5oatpuapp7kgmicdsfrs9u1ottf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

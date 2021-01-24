@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: 'com.google.gms.google-services'
 
 import com.android.build.OutputFile
 
@@ -82,6 +83,15 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+project.ext.react = [
+    enableHermes: false,  // clean and rebuild if changing
+]
+
+project.ext.vectoricons = [
+    iconFontNames: [ 'Foundation.ttf', 'MaterialCommunityIcons.ttf', 'MaterialIcons.ttf', 'Ionicons.ttf',  'AntDesign.ttf', 'FontAwesome.ttf'] // Name of the font files you want to copy
+]
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -182,7 +192,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation platform('com.google.firebase:firebase-bom:26.3.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    
     //noinspection GradleDynamicVersion
+    implementation project(':react-native-vector-icons')
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
